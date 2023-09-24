@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <style>
+        
+        header{
+            text-align: center; 
+           
+        }
+
+        form{
+           margin: 20px 30px 10px 30px;
+        }
+
+        #container{
+            display:block;
+            width:400px;
+            height:500px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin:100px auto;
+            background-color: light green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>New Employee Registration</h1>
+    </header>
+    
+    <br>
+    <div id="container">
+
+        <form action="#" method="get">
+
+            <!-- //First Name -->
+            <label for="fname">First Name : </label>
+            <input required name="Fname" id="Fname" type="text" />
+            <br><br>
+    
+            <!-- //Last Name -->
+            <label for="lname">Last Name : </label>
+            <input required name="lname" id="lname" type="text" />
+            <br><br>
+    
+            <!-- //Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <!-- //Gender -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label><br><br>
+    
+    
+            <!-- //age -->
+            <label for="age">Age:</label>
+            <input required type="number" id="age" name="age" min="18" max="99"  class="input_styling">
+            <br><br>
+    
+    
+    
+            <!-- place of birth -->
+            <label for="city">City of Birth:</label>
+            <select id="city" name="city" required>
+                <option hidden></option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Sambalpur">Sambalpur</option>
+                <option value="Mangalore">Mangalore</option>
+                <option value="Patna">Patna</option>
+                <option value="Srinagar">Srinagar</option>
+                <option value="Kanpur">Kanpur</option>
+                <option value="Guwahati">Guwahati</option>
+                <option value="Hassan">Hassan</option>
+                <option value="Ramnagar">Ramnagar</option>
+                <option value="Bidar">Bidar</option>
+                <option value="Tumkur">Tumkur</option>
+            </select><br><br>
+            
+    
+            <!-- //Resume -->
+            <label for="resume">Select Your Resume </label>
+            <input type="file" id="resume" name="resume" accept="application/pdf,application/doc,application/docx" required><br><br>
+    
+            <!-- //Position -->
+            <label for="position">Position Applying For:</label>
+            <input type="checkbox" id="developer" name="position" value="Developer">
+            <label for="developer">Developer</label>
+            <input type="checkbox" id="designer" name="position" value="Designer">
+            <label for="designer">Designer</label>
+            <input type="checkbox" id="testing_engineer" name="position" value="Testing Engineer">
+            <label for="testing_engineer">Testing Engineer</label>
+            <input type="checkbox" id="sales_support" name="position" value="Sales Support">
+            <label for="sales_support">Sales Support</label>
+            <input type="checkbox" id="hr" name="position" value="HR">
+            <label for="hr">HR</label><br><br>
+    
+    
+            <!-- joining date -->
+            <label for="joining_date">Tentative Joining Date:</label>
+            <input type="date" id="joining_date" name="joining_date" required><br><br>
+    
+            <button  onclick="onSubmit()">Submit</button>
+        </form>
+    </div>
+    
+    <script>
+        var uage = document.getElementById("age");
+        uage.setCustomValidity("you must enter your age");
+        uage.addEventListener("change",function(){
+            if(uage.value < 20){
+                uage.setCustomValidity("you are younger to join us");
+            }else if(uage.value > 90){
+                uage.setCustomValidity("you too old to join us");
+            }else{
+                uage.setCustomValidity("");
+            }
+            
+        });
+
+        function onSubmit() {
+            if (navigator.onLine) {
+                // Submit the form normally
+                document.forms.submit();
+            }
+            
+            else {
+
+        alert("You are currently offline. Your form data has been stored locally.");
+        // Store form data locally
+        localStorage.setItem("offlineFname", document.getElementById("Fname").value);
+        localStorage.setItem("offlineLname", document.getElementById("lname").value);
+        localStorage.setItem("offlineEmail", document.getElementById("email").value);
+        localStorage.setItem("offlineAge", document.getElementById("age").value);
+        localStorage.setItem("offlineCity", document.getElementById("city").value);
+        localStorage.setItem("offlineJdate", document.getElementById("joining_date").value);
+       
+        
+    }
+
+        }
+    </script>
+</body>
+</html>
