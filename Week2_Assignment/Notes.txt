@@ -1,0 +1,29 @@
+CSS Assignment Challenges :
+
+Challenge 1: Navigation Bar and Logo
+I faced challenge in aligning the navigation bar elements and integrating the logo.
+Solution: I Used CSS flexbox for proper alignment and included the logo within the navigation bar.
+
+Challenge 2: Image Overlay
+I faced challenge in creating the image overlay and also in positioning the text in the middile of the image
+Solution:I used CSS to overlay the text and button on the image, ensuring proper positioning by using 'top' and 'left' properties to center the image.
+
+Challenge 3: Aligning all services in a single line
+I used the 'display: inline' property to ensure each of them appeared in a single line, and I also employed the CSS 'width' property to control their layout.
+
+Challenge 4: Setting up the "Featured Work" section with six images
+I overcame the challenge of arranging images in the "Featured Work" section by using CSS Flexbox.
+
+Challenge 5: Diving a section into two parts with text and a image side by side.
+I solved it by using CSS flexbox to divide the section into two parts and control their alignment.
+
+
+
+
+
+
+
+
+
+
+	

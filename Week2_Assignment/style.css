@@ -1,0 +1,299 @@
+
+       
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #e7d3d3; 
+    color: black; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+}
+
+
+.logo img {
+    height: 40px; 
+    margin-right: 10px; 
+}
+
+
+.nav_bar {
+    display: flex;
+    
+}
+
+.nav_bar li {
+    margin-right: 30px; 
+}
+
+
+
+
+/* Image Section Styles */
+
+.image-section {
+    position: relative;
+    text-align: center;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 38%;
+    left: 30%;
+    background: rgba(14, 14, 14, 0); 
+    padding: 20px;
+    color: #fff; 
+    text-align: center;
+    
+}
+
+.overlay h1 {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+
+.overlay .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange; 
+    color: #fff; 
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px; 
+}
+
+
+
+
+/* 
+Services Section Styles */
+
+
+.services-section {
+    
+    background-size: cover;
+    text-align: center;
+    padding: 60px 0; 
+    color: #000; 
+}
+
+.section-title {
+    font-size:40px;
+    font-weight: bold;
+    margin-bottom: 30px; 
+    margin-top: 5px;
+}
+
+
+.service {
+    display: inline-block;
+    width: 23%; 
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.service img {
+    width: 90px; 
+    height: auto; 
+    margin-bottom: 10px;
+}
+
+
+
+
+/* featured-work-section Styles */
+
+.featured-work-section {
+    text-align: center;
+    padding: 60px 0; 
+    background-color: lightgoldenrodyellow; 
+    color: #000; 
+}
+
+.section-title {
+    font-size: 36px; 
+    font-weight: bold;
+    margin-bottom: 30px; 
+}
+
+/* Style image rows */
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images img {
+    max-width: 30%; 
+    margin: 10px; 
+}
+
+
+
+/* Style the two-part section */
+.section-Yt {
+    display: flex;
+    align-items: center;
+    padding: 60px 0; 
+    background-color: #f7f7f7; 
+    color: #000; 
+}
+
+.left-part {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-part h2 {
+    font-size: 70px; 
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.right-part {
+    flex: 1;
+}
+
+.right-part img {
+    width: 90%;
+    height: auto;
+}
+
+
+
+
+
+
+/* Style the "Our Client Says" section */
+.client-section {
+    text-align: center;
+    padding: 60px 0; 
+    background-color: #f7f7f7; 
+    color: #000; /* Text color */
+}
+
+.section-title {
+    font-size: 36px; 
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.client {
+    display: flex;
+    justify-content: space-around;
+}
+
+.client-info {
+    flex: 1;
+    padding: 20px;
+   
+}
+
+.client-info img {
+    max-width: 100px; 
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+.client-info h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.client-info p {
+    font-size: 16px; 
+}
+
+
+
+
+
+
+
+/* 
+Error Section Styles */
+
+.error-section {
+    text-align: center;
+    padding: 60px 0; 
+    background-color: lightgray; 
+    color: black; 
+}
+
+.section-title {
+    font-size: 36px; 
+    font-weight: bold;
+}
+
+
+
+
+
+/* Contact Information section Styles */
+.contact-section {
+    display: flex;
+    padding: 60px 0;
+    background-color: whitesmoke; 
+    color: #000; 
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    margin-left: 100px;
+    
+}
+
+.contact-info h3 {
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+
+
+
+
+/* Style the footer section */
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; 
+    background-color: white; 
+    color: lightslategrey; 
+}
+
+.footer-left p {
+    font-weight: bold;
+}
+
+.footer-right img {
+    max-width: 200px;
+    height: auto;
+}
+
+
+
+    
+    
