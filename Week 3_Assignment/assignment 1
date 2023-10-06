@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Bar Example</title>
+    <style>
+        #search-input {
+            width: 300px;
+            padding: 10px;
+            background-color: antiquewhite;
+
+        }
+    </style>
+
+<script>
+
+
+    function SearchFunction(){
+
+        var search = this.value.toLowerCase();
+        
+        var paragraph = document.getElementById("paragraph");
+        
+        var search_para = paragraph.textContent.toLowerCase();
+        
+        if (search_para.includes(search)) {
+
+            paragraph.innerHTML = search_para.replace(new RegExp(search, "gi"), match => `<span style="background-color: yellow;">${match}</span>`);
+        } else {
+
+            paragraph.textContent = search_para;
+        }
+    };
+   
+
+    function init(){
+
+        document.getElementById("search-input").addEventListener("keyup", SearchFunction )
+
+         
+    }
+
+    document.addEventListener("DOMContentLoaded",init)
+</script>
+</head>
+<body>
+    <h1>Search Engine</h1>
+    <input type="text" id="search-input">
+    <p id="paragraph">
+        JavaScript is a wildly popular interpreted scripting language that in early 2019 became the language most frequently learned by developers. JavaScript is an open standard, not controlled by any single vendor, with numerous implementations and an easy-to-learn syntax that makes it popular with beginners and veteran developers alike.
+
+        JavaScript dates from the earliest days of the World Wide Web. The language was first rolled out as a way to add lightweight client-side functionality to Web pages, and is widely used for that purpose today. Just about anything interactive or animated on a Web page today is rendered in JavaScript, including basically the entire ecosystems of online advertising and metrics. But JavaScript doesn’t just run in the browser. Thanks to development frameworks such as Node.js, JavaScript is now used to write code for just about any niche you can think of, from clients to servers to the cloud.
+
+        JavaScript itself arose in those early days of the Web, and its history explains the somewhat anomalous Java part of its name. In 1995, Netscape had just signed a deal with Sun Microsystems to become the first licensee of Sun’s Java language, gaining the ability to run Java applets in the pioneering and then-dominant Netscape Navigator Web browser. But some within the company believed that supporting a more lightweight scripting language in Navigator was also important. Brendan Eich, a Netscape employee at the time, explained:
+
+
+“There were people who argued strongly that Java’s fine for programmers who build components, but there’s a much larger audience of people who write scripts or maybe copy a script from somebody else and tweak it. These people are less specialized and may be paid to do something other than programming, like administer a network, and they write scripts part-time or on the side. If they’re writing small pieces of code, they just want to get their code done with the minimal amount of fuss.”
+
+Eich was prescient: Java applets never really took off, whereas the scripting language he created (very quickly) for Netscape remains the backbone of interactive websites. Originally called LiveScript, the language was created with syntax that was superficially similar to Java in many ways in order to tap into the Java developer community, though in fact there is no direct relationship between the two languages. Still, because Netscape already had a deal with Sun, just before its release the language was rebranded as JavaScript and billed by the two companies as a “complement” to the Java language.
+
+In 1997, the European Computer Manufacturers Association (ECMA) issued a standard defining the language that anyone could implement independent of Netscape; because “Java” remained a Sun trademark that only Netscape had a license to use, this standardized version was dubbed “ECMAScript.” Microsoft had referred to the version it implemented in Internet Explorer as “JScript.” However, these names long ago fell out of general use, although ECMAScript remains the official name of the standard, which has been revised numerous times over the years to keep up with improved processing power and Internet bandwidth. In practice, everyone refers to the language as JavaScript. Technically, only the Mozilla Foundation (which took over Netscape’s intellectual property in 2003) has official approval from Oracle (which acquired Sun in 2010) to use the Java trademark, but Oracle hasn’t made any effort to prevent the universal use of the name.
+    </p>
+
+    
+</body>
+</html>
