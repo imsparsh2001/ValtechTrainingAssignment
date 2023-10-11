@@ -1,0 +1,79 @@
+{
+    "Users":[{
+        "firstname": "tony",
+        "lastname": "stark",
+        "email": "tonystark@gmail.com",
+        "sim": "SIM12345",
+        "mobile": "iPhone 12",
+        "imei": "123123548945",
+        "serviceProvider": "Vodafone",
+        "networkStatus": "Connected",
+        "batteryStatus": "85%",
+        "address": {
+            "street": "123 Jp nagar",
+            "city": "bengaluru",
+            "state": "Karnataka",
+            "zipCode": "560041"
+        }
+        
+    },
+    
+    
+    {
+        "firstname": "bruce",
+        "lastname": "benner",
+        "email": "brucebenner@gmail.com",
+        "sim": "SIM12896",
+        "mobile": "iPhone 13",
+        "imei": "1231235485965",
+        "serviceProvider": "Airtel",
+        "networkStatus": "disconnected",
+        "batteryStatus": "85%",
+        "address": {
+            "street": "123 Jayanagar",
+            "city": "bengaluru",
+            "state": "Karnataka",
+            "zipCode": "560059"
+        }
+        
+    },
+    
+    {
+        "firstname": "clarke",
+        "lastname": "kent",
+        "email": "clarkekent@gmail.com",
+        "sim": "SIM17445",
+        "mobile": "iPhone 14",
+        "imei": "25863474585",
+        "serviceProvider": "Jio",
+        "networkStatus": "Connected",
+        "batteryStatus": "25%",
+        "address": {
+            "street": "123 Dadar",
+            "city": "Mumbai",
+            "state": "Maharastra",
+            "zipCode": "400958"
+        }
+        
+    },
+    
+    {
+        "firstname": "peter",
+        "lastname": "parker",
+        "email": "peterparker@gmail.com",
+        "sim": "SIM15845",
+        "mobile": "iPhone 15",
+        "imei": "1236972305005",
+        "serviceProvider": "BSNL Mobile",
+        "networkStatus": "Connected",
+        "batteryStatus": "100%",
+        "address": {
+            "street": "123 red fort",
+            "city": "delhi",
+            "state": "delhi",
+            "zipCode": "263041"
+        }
+        
+    }
+    ]
+}

@@ -1,0 +1,36 @@
+[
+    {
+        "sl": 1,
+        "city": "Bengaluru",
+        "longitude": 77.5946,
+        "latitude": 12.9716
+    },
+    {
+        "sl": 2,
+        "city": "Mumbai",
+        "longitude": 72.8777,
+        "latitude": 19.0760
+    },
+    {
+        "sl": 3,
+        "city": "Delhi",
+        "longitude": 77.2274,
+        "latitude": 28.6139
+    },
+    {
+        "sl": 4,
+        "city": "Kolkata",
+        "longitude": 88.3639,
+        "latitude": 22.5726
+    },
+    {
+        "sl": 5,
+        "city": "Lucknow",
+        "longitude": 80.9462,
+        "latitude": 26.8467
+    }
+]
+
+
+
+

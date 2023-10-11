@@ -1,0 +1,116 @@
+{
+    "cities": {
+        "Bengaluru": {
+            "places": [
+                {
+                    "name": "Bangalore Palace",
+                    "type": "historical",
+                    "description": "A beautiful palace with a rich history and stunning architecture.",
+                    "timings": "10:00 AM - 5:30 PM",
+                    "dressCode": "Casual attire",
+                    "entranceFees": "$10"
+                },
+                {
+                    "name": "Bannerghatta National Park",
+                    "type": "adventurous",
+                    "description": "A wildlife reserve with safari tours and a butterfly park.",
+                    "timings": "9:00 AM - 5:00 PM",
+                    "dressCode": "Comfortable clothing and suitable for outdoor activities.",
+                    "entranceFees": "$5"
+                },
+                {
+                    "name": "ISKCON Temple",
+                    "type": "religious",
+                    "description": "A famous temple dedicated to Lord Krishna.",
+                    "timings": "4:30 AM - 8:30 PM",
+                    "dressCode": "Modest attire",
+                    "entranceFees": "Free"
+                }
+            ]
+        },
+        "Mumbai": {
+            "places": [
+                {
+                    "name": "Gateway of India",
+                    "type": "historical",
+                    "description": "An iconic monument and historical landmark.",
+                    "timings": "Open 24 hours",
+                    "dressCode": "Casual attire",
+                    "entranceFees": "Free"
+                },
+                {
+                    "name": "Essel World",
+                    "type": "adventurous",
+                    "description": "Amusement and water park for thrill-seekers.",
+                    "timings": "10:00 AM - 7:00 PM",
+                    "dressCode": "Swimwear for water rides",
+                    "entranceFees": "$25"
+                },
+                {
+                    "name": "Siddhivinayak Temple",
+                    "type": "religious",
+                    "description": "A prominent temple dedicated to Lord Ganesha.",
+                    "timings": "5:30 AM - 10:00 PM",
+                    "dressCode": "Modest attire",
+                    "entranceFees": "Free"
+                }
+            ]
+        },
+        "Delhi": {
+            "places": [
+                {
+                    "name": "Red Fort",
+                    "type": "historical",
+                    "description": "A historic fort with impressive architecture and cultural significance.",
+                    "timings": "9:30 AM - 4:30 PM",
+                    "dressCode": "Casual attire",
+                    "entranceFees": "$5"
+                },
+                {
+                    "name": "India Gate",
+                    "type": "historical",
+                    "description": "A war memorial and iconic landmark in Delhi.",
+                    "timings": "Open 24 hours",
+                    "dressCode": "Casual attire",
+                    "entranceFees": "Free"
+                },
+                {
+                    "name": "Lotus Temple",
+                    "type": "religious",
+                    "description": "A Bahá'í House of Worship known for its lotus-shaped architecture.",
+                    "timings": "9:00 AM - 6:00 PM",
+                    "dressCode": "Modest attire",
+                    "entranceFees": "Free"
+                }
+            ]
+        },
+        "Kolkata": {
+            "places": [
+                {
+                    "name": "Victoria Memorial",
+                    "type": "historical",
+                    "description": "A grand marble building dedicated to Queen Victoria.",
+                    "timings": "10:00 AM - 6:00 PM",
+                    "dressCode": "Casual attire",
+                    "entranceFees": "$5"
+                },
+                {
+                    "name": "Sundarbans",
+                    "type": "adventurous",
+                    "description": "Explore the world's largest mangrove forest and its wildlife.",
+                    "timings": "Depends on tour",
+                    "dressCode": "Comfortable clothing for outdoor activities",
+                    "entranceFees": "Varies by tour"
+                },
+                {
+                    "name": "Dakshineswar Kali Temple",
+                    "type": "religious",
+                    "description": "A famous temple dedicated to Goddess Kali.",
+                    "timings": "6:00 AM - 12:00 PM and 3:00 PM - 8:30 PM",
+                    "dressCode": "Modest attire",
+                    "entranceFees": "Free"
+                }
+            ]
+        }
+    }
+}
