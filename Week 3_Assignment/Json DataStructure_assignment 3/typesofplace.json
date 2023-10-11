@@ -8,7 +8,7 @@
                     "description": "A beautiful palace with a rich history and stunning architecture.",
                     "timings": "10:00 AM - 5:30 PM",
                     "dressCode": "Casual attire",
-                    "entranceFees": "$10"
+                    "entranceFees": "RS 10"
                 },
                 {
                     "name": "Bannerghatta National Park",
@@ -16,7 +16,7 @@
                     "description": "A wildlife reserve with safari tours and a butterfly park.",
                     "timings": "9:00 AM - 5:00 PM",
                     "dressCode": "Comfortable clothing and suitable for outdoor activities.",
-                    "entranceFees": "$5"
+                    "entranceFees": "RS 50"
                 },
                 {
                     "name": "ISKCON Temple",
@@ -44,7 +44,7 @@
                     "description": "Amusement and water park for thrill-seekers.",
                     "timings": "10:00 AM - 7:00 PM",
                     "dressCode": "Swimwear for water rides",
-                    "entranceFees": "$25"
+                    "entranceFees": "RS 250"
                 },
                 {
                     "name": "Siddhivinayak Temple",
@@ -64,7 +64,7 @@
                     "description": "A historic fort with impressive architecture and cultural significance.",
                     "timings": "9:30 AM - 4:30 PM",
                     "dressCode": "Casual attire",
-                    "entranceFees": "$5"
+                    "entranceFees": "RS 50"
                 },
                 {
                     "name": "India Gate",
@@ -92,7 +92,7 @@
                     "description": "A grand marble building dedicated to Queen Victoria.",
                     "timings": "10:00 AM - 6:00 PM",
                     "dressCode": "Casual attire",
-                    "entranceFees": "$5"
+                    "entranceFees": "RS 50"
                 },
                 {
                     "name": "Sundarbans",
