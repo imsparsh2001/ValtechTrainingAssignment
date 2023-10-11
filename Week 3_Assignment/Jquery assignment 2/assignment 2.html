@@ -1,0 +1,121 @@
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <style>
+
+            button{
+                width: 200px;
+                margin : auto;
+                margin-bottom: 20px;
+                display: block;
+            }
+
+
+        </style>
+
+        <script src="lib/jquery.js"></script>
+
+   <script>
+    var tempdata = {};
+    // Fetch data from JSON file
+    $(() => {
+        $.getJSON("data/data.json", function (data, status, jqxhr) {
+            tempdata = data;
+            $(data.herolist).each(function (idx, val) {
+                $(".hlist").append(`<option value="${idx}">${val.title}</option>`)
+                
+            });
+
+            // console.log(tempdata);
+            // console.log("data loaded");
+        });
+
+        //add click event to movie button
+        $(".box").on("click", "button.movies", function (evt) {
+            //Get the selected hero's index from the dropdown list
+            const selectedHeroIndex = $(".hlist").val();
+
+            if (selectedHeroIndex !== "default") {
+                const selectedHero = tempdata.herolist[selectedHeroIndex];
+
+            // Check if the selected hero has movies
+                if (selectedHero.movieslist) {
+                    let moviesList = "<ul>";
+
+                    selectedHero.movieslist.forEach(function (movie) {
+                        moviesList += `<li>${movie.title}<br>
+                        <img src="${movie.poster}" alt="${movie.title}" width="100%"></li>`;
+                    });
+
+                    moviesList += "</ul>";
+
+                    // Display the movies list
+                    $(evt.target).next(".card").find(".movie-list").html(moviesList);
+                    // console.log(selectedHero.movieslist);
+
+                } 
+            else {
+
+                    $(evt.target).next(".card").find(".movie-list").html("<p>No movies available for this hero.</p>");
+                    // console.log(selectedHero.movieslist);
+                    // alert()
+
+                }
+            }
+        });
+
+        //change event
+        $(".hlist").on("change", function (evt) {
+            let selectedHero = tempdata.herolist[evt.target.value];
+            $(".box").html(`
+                <div class="card" style="width: 18rem;">
+                    <img src="${selectedHero.poster.replace('images', 'images/')}" class="card-img-top" alt="${selectedHero.title}">
+                    <div class="card-body">
+                        <h5 class="card-title">${selectedHero.title}</h5>
+                        <p class="card-text">
+                            Full Name : ${selectedHero.firstname + " " + selectedHero.lastname}<br/>
+                            Release on : ${selectedHero.releasedate}<br/>
+                            Ticket Price : ${selectedHero.ticketprice}<br/>
+                            City : ${selectedHero.city}
+                        </p>
+                        <button class="btn btn-primary movies">Movies</button>
+                        <div class="card movie-card" style="width: 100%">
+                            <div class="movie-list"></div>
+                        </div>
+                    </div>
+                </div>s
+            `);
+
+            // console.log(selectedHero);
+
+        });
+    });
+</script>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <select class="hlist">
+               <option>default</option>
+            </select>
+
+            <div class="box"></div>
+
+        </div>
+
+    </body>
+
+    </html>
