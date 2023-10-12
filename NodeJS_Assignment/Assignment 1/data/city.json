@@ -1,0 +1,38 @@
+[
+    {
+        "sl": 1,
+        "city": "Bengaluru"
+    },
+    {
+        "sl": 2,
+        "city": "Mumbai"
+        
+    },
+    {
+        "sl": 3,
+        "city": "Delhi"
+    },
+    {
+        "sl": 4,
+        "city": "Kolkata"
+    },
+    {
+        "sl": 5,
+        "city": "Lucknow"
+    },
+    {
+        "sl": 6,
+        "city": "Mysore"
+    },
+    {
+        "sl": 7,
+        "city": "Pune"
+    },
+    {
+        "sl": 8,
+        "city": "Hyderabad"
+    }
+]
+
+
+
